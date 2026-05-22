@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Kanken Grotesk';
+  src: url('./fonts/kanken-grotesk.woff2') format('woff2'),
+       url('./fonts/kanken-grotesk.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  /* Text Colours */
+  --navbar-text-color: #acaab3;
+  --navbar-hover-color: #FBABFF;
+
+  /* Background Colours */
+  --navbar-bg-color: #0F172A;
+  --accent-bg-color: #121a30;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  padding: 20px;
+  border-bottom: 1px solid var(--accent-bg-color);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Could Implement justify-content:flex-end */
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 10px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--navbar-text-color);
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--navbar-hover-color);
+}
