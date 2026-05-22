@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Theart's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components/navbar.css">
   <link rel="stylesheet" href="css/sections/hero.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<nav class="navbar">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
 <body>
+<!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+<!-- ========== HERO ========== -->
   <div class="hero">
+<!-- ========== HERO CONTENT LEFT ========== -->
     <div class="heroContentLeft">
       <div class="status">
-        <p style="display: flex; align-items: center; gap: 8px;">
+        <p>
           <svg width="10" height="10" viewBox="0 0 10 10">
             <circle cx="5" cy="5" r="4" fill="#FBABFF">
-              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
             </circle>
           </svg>
-          CAREER_STATUS: OPEN
+          CAREER_STATUS: OPEN TO NEW OPPORTUNITIES
         </p>
       </div>
-      <h1>Building <span id="accentTextColor">innovative solutions</span> for modern problems</h1>
-      <p>Specialize in full‑stack web development and machine learning, creating scalable applications and intelligent
-        solutions that merge modern design with advanced data‑driven insights to deliver impactful digital experiences.
-      </p>
+      <h1>Building <span class="accent">innovative solutions</span> for modern problems</h1>
+      <p>Specializing in full-stack web development and machine learning, creating scalable applications and intelligent solutions that merge modern design with advanced data-driven insights.</p>
       <div class="heroButtons">
         <button class="btnGitHub">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
           </svg>
           View GitHub
         </button>
         <button class="btnAbout">Read About Me 🡢</button>
       </div>
     </div>
+<!-- ========== HERO CONTENT RIGHT ========== -->
     <div class="heroContentRight">
+<!-- ========== TERMINAL ========== -->
       <div class="terminal">
         <div class="terminalHeader">
           <div class="terminalButtons">
@@ -58,20 +58,14 @@
           </div>
         </div>
         <div class="terminalBody">
-          <p><span id="terminalPink">const</span> <span id="terminalBlue">engineer</span> = <span id="terminalPink">[{</span></p>
-          <p>Name: <span id="terminalPink">"Theart Jooste"</span></p>
-          <p>Title: <span id="terminalPink"></span>"Full‑Stack Developer & Machine Learning Engineer"</span></p>
-          <p>Location: <span id="terminalPink">"Pretoria, South Africa"</span></p>
-          <p>Skills: 
-            <span id="terminalPink">"JavaScript"</span>, 
-            <span id="terminalPink">"Python"</span>, 
-            <span id="terminalPink">"C#"</span>, 
-            <span id="terminalPink">"C++"</span>, 
-            <span id="terminalPink">"HTML & CSS"</span>, 
-            <span id="terminalPink">"SQL"</span></p>
-          <p><span id="terminalPink">}]</span></p>
-          <p id="terminalComment"># Current focus: "Full‑Stack Development & Machine Learning"</p>
-          <p class="terminalLine" id="terminalPink">PS C:/Users/theart ></p>
+          <p><span class="tPink">const</span> <span class="tBlue">engineer</span> = <span class="tPink">[{</span></p>
+          <p>Name: <span class="tPink">"Theart Jooste"</span></p>
+          <p>Title: <span class="tPink">"Full-Stack Developer & Machine Learning Engineer"</span></p>
+          <p>Location: <span class="tPink">"Pretoria, South Africa"</span></p>
+          <p>Skills: <span class="tPink">"JavaScript"</span>, <span class="tPink">"Python"</span>, <span class="tPink">"C#"</span>, <span class="tPink">"C++"</span>, <span class="tPink">"HTML & CSS"</span>, <span class="tPink">"SQL"</span></p>
+          <p><span class="tPink">}]</span></p>
+          <p class="tComment"># Current focus: "Full-Stack Development & Machine Learning"</p>
+          <p class="tLine tPink">PS C:/Users/theart ></p>
         </div>
       </div>
     </div>
@@ -79,5 +73,4 @@
 
   <script src="js/script.js"></script>
 </body>
-
 </html>
