@@ -6,15 +6,24 @@
   --color-text-comment: #686668;
   --color-text-blue: #58cde2;
 
-  --color-border: #293db157;
+  --color-border: #fbabff2f;
+
+  --color-hover: #fbabff69;
 
   --color-bg-primary: #0F172A;
   --color-bg-accent: #121a30;
   --color-bg-button: #fbabff2f;
-  --color-bg-terminal: #131b30;
-  --color-bg-terminal-header: #2a334b;
+  --color-bg-terminal: #101011;
+  --color-bg-terminal-header: #171718;
 
   --navbar-height: 60px;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./Space%20Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
 }
 
 /* Hero Layout */
@@ -22,6 +31,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: calc(100dvh - var(--navbar-height));
+}
+
+.heroContentLeft h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
 }
 
 .heroContentLeft {
@@ -108,6 +122,12 @@
   width: 75%;
   height: 55%;
   overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal:hover{
+  border-color: var(--color-text-accent);
+  box-shadow: 0 0 20px var(--color-hover);
 }
 
 .terminalHeader {
@@ -147,6 +167,18 @@
   font-size: clamp(12px, 1.2vw, 18px);
   line-height: 1.8;
   overflow-y: auto;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.cursor {
+  margin-top: -1px;
+  animation: blink 1s step-start infinite;
+  color: var(--color-text-console);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
 
 .tPink    { color: var(--color-text-accent); }
@@ -181,5 +213,9 @@
     width: 100%;
     height: auto;
     min-height: 300px;
+  }
+
+  .terminalBody {
+    font-size: 16px;
   }
 }

@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Theart's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components/navbar.css">
   <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/language.css">
 </head>
 <body>
 <!-- ========== NAVBAR ========== -->
   <nav class="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#languages">Tools</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -30,7 +33,7 @@
               <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
             </circle>
           </svg>
-          CAREER_STATUS: OPEN TO NEW OPPORTUNITIES
+          CAREER_STATUS: OPEN
         </p>
       </div>
       <h1>Building <span class="accent">innovative solutions</span> for modern problems</h1>
@@ -42,7 +45,7 @@
           </svg>
           View GitHub
         </button>
-        <button class="btnAbout">Read About Me 🡢</button>
+        <button class="btnAbout">Read About Me</button>
       </div>
     </div>
 <!-- ========== HERO CONTENT RIGHT ========== -->
@@ -59,17 +62,65 @@
         </div>
         <div class="terminalBody">
           <p><span class="tPink">const</span> <span class="tBlue">engineer</span> = <span class="tPink">[{</span></p>
-          <p>Name: <span class="tPink">"Theart Jooste"</span></p>
-          <p>Title: <span class="tPink">"Full-Stack Developer & Machine Learning Engineer"</span></p>
-          <p>Location: <span class="tPink">"Pretoria, South Africa"</span></p>
+          <p>Name: <span class="tPink">"Theart Jooste"</span>,</p>
+          <p>Title: <span class="tPink">"Full-Stack Developer & Machine Learning Engineer"</span>,</p>
+          <p>Location: <span class="tPink">"Pretoria, South Africa"</span>,</p>
           <p>Skills: <span class="tPink">"JavaScript"</span>, <span class="tPink">"Python"</span>, <span class="tPink">"C#"</span>, <span class="tPink">"C++"</span>, <span class="tPink">"HTML & CSS"</span>, <span class="tPink">"SQL"</span></p>
           <p><span class="tPink">}]</span></p>
           <p class="tComment"># Current focus: "Full-Stack Development & Machine Learning"</p>
-          <p class="tLine tPink">PS C:/Users/theart ></p>
+          <p class="tLine tPink">PS C:/Users/theart > <span class="cursor">|</span></p>
         </div>
       </div>
     </div>
   </div>
+<!-- ========== LANGUAGES ========== -->
+<section id="languages">
+  <p>TECHNICAL_ECOSYSTEM</p>
+  <h2>Preferred Tooling</h2>
+  <div class="languageContent">
+    <div class="lang-item">
+      <img src="./assets/images/languages/c-sharp.png" alt="C# Logo">
+      <span>C#</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/c++.png" alt="C++ Logo">
+      <span>C++</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/java.png" alt="Java Logo">
+      <span>Java</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/python.png" alt="Python Logo">
+      <span>Python</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/js.png" alt="JavaScript Logo">
+      <span>JavaScript</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/html.png" alt="HTML Logo">
+      <span>HTML</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/css.png" alt="CSS Logo">
+      <span>CSS</span>
+    </div>
+    <div class="lang-item">
+      <img src="./assets/images/languages/mongodb.png" alt="MongoDB Logo">
+      <span>MongoDB</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <p>PROJECTS.OPEN()</p>
+    <div class="projectsHeader">
+      <h2>Open Source Projects</h2>
+      <h3 id="totalCommits">Total Commits: 170</h3>
+    </div>
+  </section>  
 
   <script src="js/script.js"></script>
 </body>

@@ -12,8 +12,8 @@
   --navbar-hover-color: #FBABFF;
 
   /* Background Colours */
-  --navbar-bg-color: #0F172A;
-  --accent-bg-color: #121a30;
+  --navbar-bg-color: #131314;
+  --accent-bg-color: #22242462;
 }
 
 /* Navbar Styles */
@@ -21,6 +21,8 @@
   background-color: var(--navbar-bg-color);
   padding: 20px;
   border-bottom: 1px solid var(--accent-bg-color);
+  position: sticky;
+  top: 0;
 }
 
 .navbar ul {
