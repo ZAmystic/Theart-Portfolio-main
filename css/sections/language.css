@@ -1,6 +1,6 @@
 :root{
  /* Language Colours */
-  --primary-lg-color: #121213c5;
+  --primary-lg-color: #121213;
   --hover-lg-color: #fbabff9a;
 
   /* Text Colours */
@@ -32,6 +32,8 @@ body {
   background-size: 50px 50px;
 }
 
+/* Language Header Section */
+
 #languages{
   text-align: center;
 }
@@ -49,104 +51,61 @@ body {
   margin-bottom: 5px;
 }
 
+/* Language Section */
 
-.languageContent{
+.language{
+  display: flex;
+  justify-content: center;
+}
+
+.languageContent {
   background-color: var(--primary-lg-color);
   border: 1px solid var(--grid-bg-color);
-  margin: 20px 50px;  
+  margin: 20px 50px;
   height: 115px;
   border-radius: 10px;
-  display: flex;
+  overflow: hidden; /* Important */
+  position: relative;
   align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  width: 60%;
 }
 
-.languageContent:hover {
-  background-color: var(--primary-lg-color);
-  border-color: var(--hover-lg-color);
-  box-shadow: 0 0 10px var(--hover-lg-color);
+.scroll-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
 }
 
-.languageContent img{
-  margin: 0 45px;
-  width: auto;
-  height: 70px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.scroll-content {
+  display: flex;
 }
 
-.lang-item{
-  display:flex;
+.lang-item {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 45px;
 }
 
-.lang-item img{
+.lang-item img {
+  height: 70px;
   margin-bottom: 10px;
-  width: auto;
 }
 
-.lang-item span{
+.lang-item span {
   color: var(--main-text-color);
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-/* ===== MOBILE OPTIMIZATION ===== */
-
-@media (max-width: 768px) {
-  #languages h2 {
-    font-size: 26px;
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
   }
-
-  .languageContent {
-    height: auto;
-    margin: 20px 16px;
-    padding: 20px 12px;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .lang-item img {
-    height: 48px;
-    margin: 0;
-  }
-
-  .lang-item span {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  #languages h2 {
-    font-size: 22px;
-  }
-
-  #languages p {
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-
-  .languageContent {
-    margin: 16px 12px;
-    padding: 16px 8px;
-    gap: 16px;
-  }
-
-  .lang-item {
-    width: calc(25% - 12px); /* 4 per row */
-    min-width: 60px;
-  }
-
-  .lang-item img {
-    height: 40px;
-  }
-
-  .lang-item span {
-    font-size: 11px;
-    letter-spacing: 0.5px;
+  100% {
+    transform: translateX(-25%);
   }
 }
