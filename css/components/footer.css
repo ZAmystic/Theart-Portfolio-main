@@ -1,89 +1,162 @@
-:root{
-  /* Text Colours */
-  --footer-code-color: #FBABFF;
-  --footer-text-color: #8d3c99;
-  --footer-social-color: #8d3c99;
-  --footer-link-color: #cfcfcf;
-
-  /* Background Colours */
-  --primary-footer-color: #131314;
-  --grid-bg-color: #22242462;
-}
+/* ========== FOOTER ========== */
 
 footer {
-  background-color: var(--primary-footer-color);
-  border-top: 1px solid var(--grid-bg-color);
+  margin-top: 4rem;
+  background: #0d0d0d;
+  border-top: 1px solid #1e1e1e;
+  width: 100%;
 }
 
-footer h1{
-    color: var(--footer-code-color);
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-bottom: 15px;
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
 }
 
-.footerLine {
+/* ===== GRID ===== */
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+/* ===== BRAND ===== */
+
+.footerLogo {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f0f0f0;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.footerTagline {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.footerStatus {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #00ff88;
   display: flex;
-  justify-content: space-between; 
-  align-items: center;            
-  color: var(--footer-text-color);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 25px;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.footer-text{
-    color: var(--footer-link-color);
+/* ===== COLUMNS ===== */
+
+.footerColLabel {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #FBABFF;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
 }
 
-.socialLinks a{
-   padding-right: 20px;
-   text-decoration: none;
-   color: var(--footer-link-color);
-   transition: color 0.3s ease;
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.socialLinks a:hover{
-  color: var(--footer-code-color);
+.footerLinks a {
+  font-size: 0.83rem;
+  color: #777;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
 }
 
-.social-icon {
-  color: var(--footer-social-color);
+.footerLinks a i {
+  font-size: 0.7rem;
+  color: #444;
+  transition: color 0.2s ease;
+  width: 12px;
+}
+
+.footerLinks a:hover {
+  color: #FBABFF;
+}
+
+.footerLinks a:hover i {
+  color: #FBABFF;
+}
+
+/* ===== BOTTOM BAR ===== */
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footerCopy {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.68rem;
+  color: #555;
+  margin: 0;
+}
+
+.footerCopy .tPink { color: #FBABFF; }
+
+.footerBuilt {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.65rem;
+  color: #444;
+  margin: 0;
+}
+
+.footerBuilt .accent { color: #FBABFF; }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footerBrand {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 600px) {
-  
-footer h1{
-    font-size: 14px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-bottom: 25px;  
-}  
-
-.footerLine p{
-    font-size: 14px; 
-    padding-bottom: 15px;
-}
-
-.socialLinks{
-    display: flex;
-    flex-direction: column;
-}
-
-.socialLinks a{
-    padding-right: 15px;
-    padding-bottom: 15px;
-    font-size: 14px;
-}
-
-  .footerLine {
-    flex-direction: column;
-    text-align: center;
+  .footerInner {
+    padding: 2.5rem 1rem 0;
   }
 
-  .socialLinks {
-    margin-top: 10px;
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .footerBrand {
+    grid-column: 1 / -1;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
   }
 }

@@ -25,17 +25,13 @@
 
 body {
   position: relative;
-  background-color: var(--primary-bg-color);
-  background-image: 
-    linear-gradient(var(--grid-bg-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-bg-color) 1px, transparent 1px);
-  background-size: 50px 50px;
 }
 
 /* Language Header Section */
 
 #languages{
   text-align: center;
+  margin: 0 0 5rem;
 }
 
 #languages p{

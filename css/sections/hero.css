@@ -77,7 +77,7 @@
   color: var(--color-text-accent);
   padding: 6px 12px;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 /* Accent */
@@ -163,6 +163,7 @@
   color: var(--color-text-console);
   font-size: 14px;
   margin-left: 10px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 .terminalBody {
@@ -171,7 +172,7 @@
   font-size: clamp(12px, 1.2vw, 18px);
   line-height: 1.8;
   overflow-y: auto;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 .cursor {

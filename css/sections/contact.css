@@ -1,0 +1,301 @@
+/* ========== CONTACT SECTION ========== */
+
+#contact {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .sectionLabel {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #FBABFF;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+#contact h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+
+#contact h2 span.accent {
+  color: #FBABFF;
+}
+
+.contactSubline {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 2.5rem;
+}
+
+/* ========== LAYOUT ========== */
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ========== FORM ========== */
+
+.contactFormWrap {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 2rem;
+  position: relative;
+}
+
+.contactFormWrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FBABFF, transparent);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formGroup label {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup textarea {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  padding: 0.7rem 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #444;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #FBABFF;
+}
+
+/* ========== SEND BUTTON ========== */
+
+.btnSend {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(251, 171, 255, 0.08);
+  border: 1px solid rgba(251, 171, 255, 0.4);
+  color: #FBABFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btnSend:hover {
+  background: rgba(251, 171, 255, 0.15);
+  border-color: #FBABFF;
+}
+
+.btnSend:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ========== FORM STATUS ========== */
+
+.formStatus {
+  font-size: 0.75rem;
+  min-height: 1.2em;
+  margin: 0;
+}
+
+.formStatus.success { color: #00ff88; }
+.formStatus.error   { color: #ff5555; }
+
+/* ========== INFO PANEL (RIGHT) ========== */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contactInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contactInfoLabel {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #555;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contactInfoValue {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.contactInfoValue i {
+  color: #FBABFF;
+  font-size: 0.85rem;
+}
+
+.contactInfoLink {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactInfoLink:hover {
+  color: #FBABFF;
+}
+
+/* ========== DIVIDER ========== */
+
+.contactDivider {
+  height: 1px;
+  background: #eba2ee;
+  margin: 0.25rem 0;
+}
+
+/* ========== SOCIAL LINKS ========== */
+
+.contactSocials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contactSocialLink {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #777;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: color 0.2s ease;
+  letter-spacing: 0.04em;
+}
+
+.contactSocialLink i {
+  width: 14px;
+  text-align: center;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.contactSocialLink:hover {
+  color: #FBABFF;
+}
+
+.contactSocialLink:hover i {
+  color: #FBABFF;
+}
+
+/* ========== INLINE TERMINAL SNIPPET ========== */
+
+.contactTerminal {
+  background: #0a0a0a;
+  border: 1px solid #1e1e1e;
+  border-radius: 2px;
+  padding: 0rem 1.25rem 1rem 1.25rem;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+.contactTerminal .tComment { color: #555; }
+.contactTerminal .tPink    { color: #FBABFF; }
+.contactTerminal .tNormal  { color: #ccc; }
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contactInfoBlock{
+    hidden: true;
+  }
+
+  .contactInfo {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 3rem 1rem;
+  }
+
+  .contactFormWrap {
+    padding: 1.25rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .btnSend {
+    align-self: stretch;
+    justify-content: center;
+  }
+}

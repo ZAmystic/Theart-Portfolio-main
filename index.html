@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Theart's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a31090160d.js" crossorigin="anonymous"></script>
 
   <!-- ========== GLOBAL ========== -->
@@ -22,7 +21,7 @@
   <link rel="stylesheet" href="css/sections/language.css">
   <link rel="stylesheet" href="css/sections/about.css">
   <link rel="stylesheet" href="css/sections/projects.css">
-</head>
+  <link rel="stylesheet" href="css/sections/contact.css">
 
 <body>
   <!-- ========== NAVBAR ========== -->
@@ -38,16 +37,17 @@
   <!-- ========== HERO ========== -->
   <div class="hero">
     <div class="heroContentLeft">
+
+      <!-- STATUS BUBBLE: PINK -->
       <div class="status">
         <p>
-          <svg width="10" height="10" viewBox="0 0 10 10">
-            <circle cx="5" cy="5" r="4" fill="#FBABFF">
-              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
-            </circle>
-          </svg>
-          CAREER_STATUS: OPEN
+          <span class="statusBubble pink">
+            <span class="dot"></span>
+           CAREER_STATUS: OPEN
+          </span>
         </p>
       </div>
+
       <h1>Building <span class="accent">innovative solutions</span> for modern problems</h1>
       <p>Specializing in full-stack web development and machine learning, creating scalable applications and intelligent
         solutions that merge modern design with advanced data-driven insights.</p>
@@ -55,14 +55,13 @@
         <a href="https://github.com/ZAmystic" target="_blank">
           <button class="btnGitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
             </svg>
             View GitHub
           </button>
         </a>
         <a href="#about">
-        <button class="btnAbout">Read About Me <i class="fa-solid fa-angle-right"></i></button>
+          <button class="btnAbout">Read About Me <i class="fa-solid fa-angle-right"></i></button>
         </a>
       </div>
     </div>
@@ -81,9 +80,7 @@
           <p>Name: <span class="tPink">"Theart Jooste"</span>,</p>
           <p>Title: <span class="tPink">"Full-Stack Developer"</span>,</p>
           <p>Location: <span class="tPink">"Pretoria, South Africa"</span>,</p>
-          <p>Skills: <span class="tPink">"JavaScript"</span>, <span class="tPink">"Python"</span>, <span
-              class="tPink">"C#"</span>, <span class="tPink">"C++"</span>, <span class="tPink">"HTML & CSS"</span>,
-            <span class="tPink">"SQL"</span></p>
+          <p>Skills: <span class="tPink">"JavaScript"</span>, <span class="tPink">"Python"</span>, <span class="tPink">"C#"</span>, <span class="tPink">"C++"</span>, <span class="tPink">"HTML & CSS"</span>, <span class="tPink">"SQL"</span></p>
           <p><span class="tPink">}]</span></p>
           <p class="tComment"># Current focus: "Full-Stack Development"</p>
           <p class="tLine tPink">PS C:/Users/theart > <span class="cursor">|</span></p>
@@ -92,38 +89,79 @@
     </div>
   </div>
 
-  <!-- ========== ABOUT ========== -->
-  <section id="about">
-    <p class="aboutHeader">ABOUT THEART // 00</p>
-    <div class="aboutgrid">
-      <div class="aboutContentLeft">
-        <h1><i class="fa-solid fa-laptop-code"></i> Hello, I'm Theart Jooste! </h1></i>
-        <p>
-          I'm a passionate full-stack developer with a love for crafting innovative solutions.
-          I love to explore new technologies and apply them to create efficient and user-friendly applications.
-          My approach focuses on scalability, security and user experience.
-        </p>
-        <br>
-        <p>
-          With my background at Belgium Campus iTversity I have hands on experience in a wide range of technologies and
-          working on various projects in groups.
-          This helped me build strong soft-skills and technical work enviroment skills.
-          I am always eager to learn and grow as a developer, and I am excited to take on new challenges and contribute
-          to impactful projects.
-        </p>
+<!-- ========== ABOUT ========== -->
+<section id="about">
+  <p class="aboutHeader">ABOUT THEART // 00</p>
+
+  <div class="aboutGrid">
+
+    <!-- ===== LEFT ===== -->
+    <div class="aboutLeft">
+      <h1 class="aboutTitle">
+        Hello, I'm <span class="accent">Theart Jooste</span>
+      </h1>
+
+      <p class="aboutLead">
+        I'm a passionate full-stack developer with a love for crafting innovative solutions.
+        I explore new technologies and apply them to create efficient, user-friendly applications —
+        with a focus on scalability, security and experience.
+      </p>
+
+      <p class="aboutBody">
+        With my background at Belgium Campus iTversity I have hands-on experience across a wide range
+        of technologies, working on various group projects that sharpened both my technical and soft skills.
+        I'm always eager to learn, grow, and contribute to impactful work.
+      </p>
+
+      <div class="aboutTags">
+        <span class="aboutTag"><i class="fa-solid fa-code"></i> Full-Stack Dev</span>
+        <span class="aboutTag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+        <span class="aboutTag"><i class="fa-solid fa-shield-halved"></i> Clean Code</span>
+        <span class="aboutTag"><i class="fa-solid fa-location-dot"></i> Pretoria, SA</span>
       </div>
-      <div class="aboutContentRight">
-        <div class="ContentRightBox">
-            <h2>TECHNICAL_METRICS</i></h2>
-          <div class="seperatorLine"></div>
-          <p><span class="metricLabel">Industry Experience:</span> <span class="metricValue">1 YEAR</span></p>
-          <p><span class="metricLabel">Projects Completed:</span> <span class="metricValue">10+</span></p>
-          <p><span class="metricLabel">Programming Languages:</span> <span class="metricValue">6+</span></p>
-          <p><span class="metricLabel">Primary Philosophy:</span> <span class="metricValue">CLEAN_CODE</span></p>
+    </div>
+
+    <!-- ===== RIGHT ===== -->
+    <div class="aboutRight">
+      <div class="metricsCard">
+        <div class="metricsCardHeader">
+          <span class="metricsLabel">TECHNICAL_METRICS</span>
+          <span class="metricsHeaderLine"></span>
+        </div>
+
+        <div class="metricsList">
+          <div class="metricRow">
+            <span class="metricKey">Industry Experience</span>
+            <span class="metricVal">1 <span class="metricUnit">YEAR</span></span>
+          </div>
+          <div class="metricDivider"></div>
+
+          <div class="metricRow">
+            <span class="metricKey">Projects Completed</span>
+            <span class="metricVal">10<span class="metricUnit">+</span></span>
+          </div>
+          <div class="metricDivider"></div>
+
+          <div class="metricRow">
+            <span class="metricKey">Programming Languages</span>
+            <span class="metricVal">6<span class="metricUnit">+</span></span>
+          </div>
+          <div class="metricDivider"></div>
+
+          <div class="metricRow">
+            <span class="metricKey">Primary Philosophy</span>
+            <span class="metricVal metricValMono">CLEAN_CODE</span>
+          </div>
+        </div>
+
+        <div class="metricsCardFooter">
+          <span class="statusBubble green"><span class="dot"></span> Available for hire</span>
         </div>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- ========== LANGUAGES ========== -->
   <section id="languages">
@@ -136,30 +174,108 @@
             <div class="lang-item"><img src="./assets/images/languages/c-sharp.png" alt="C# Logo"><span>C#</span></div>
             <div class="lang-item"><img src="./assets/images/languages/c++.png" alt="C++ Logo"><span>C++</span></div>
             <div class="lang-item"><img src="./assets/images/languages/java.png" alt="Java Logo"><span>Java</span></div>
-            <div class="lang-item"><img src="./assets/images/languages/python.png" alt="Python Logo"><span>Python</span>
-            </div>
-            <div class="lang-item"><img src="./assets/images/languages/js.png"
-                alt="JavaScript Logo"><span>JavaScript</span></div>
+            <div class="lang-item"><img src="./assets/images/languages/python.png" alt="Python Logo"><span>Python</span></div>
+            <div class="lang-item"><img src="./assets/images/languages/js.png" alt="JavaScript Logo"><span>JavaScript</span></div>
             <div class="lang-item"><img src="./assets/images/languages/html.png" alt="HTML Logo"><span>HTML</span></div>
             <div class="lang-item"><img src="./assets/images/languages/css.png" alt="CSS Logo"><span>CSS</span></div>
-            <div class="lang-item"><img src="./assets/images/languages/mongodb.png"
-                alt="MongoDB Logo"><span>MongoDB</span>
-            </div>
+            <div class="lang-item"><img src="./assets/images/languages/mongodb.png" alt="MongoDB Logo"><span>MongoDB</span></div>
           </div>
           <div class="scroll-content">
             <div class="lang-item"><img src="./assets/images/languages/c-sharp.png" alt="C# Logo"><span>C#</span></div>
             <div class="lang-item"><img src="./assets/images/languages/c++.png" alt="C++ Logo"><span>C++</span></div>
             <div class="lang-item"><img src="./assets/images/languages/java.png" alt="Java Logo"><span>Java</span></div>
-            <div class="lang-item"><img src="./assets/images/languages/python.png" alt="Python Logo"><span>Python</span>
-            </div>
-            <div class="lang-item"><img src="./assets/images/languages/js.png"
-                alt="JavaScript Logo"><span>JavaScript</span></div>
+            <div class="lang-item"><img src="./assets/images/languages/python.png" alt="Python Logo"><span>Python</span></div>
+            <div class="lang-item"><img src="./assets/images/languages/js.png" alt="JavaScript Logo"><span>JavaScript</span></div>
             <div class="lang-item"><img src="./assets/images/languages/html.png" alt="HTML Logo"><span>HTML</span></div>
             <div class="lang-item"><img src="./assets/images/languages/css.png" alt="CSS Logo"><span>CSS</span></div>
-            <div class="lang-item"><img src="./assets/images/languages/mongodb.png"
-                alt="MongoDB Logo"><span>MongoDB</span>
+            <div class="lang-item"><img src="./assets/images/languages/mongodb.png" alt="MongoDB Logo"><span>MongoDB</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <p class="sectionLabel">CONTACT // 03</p>
+    <h2>Get In <span class="accent">Touch</span></h2>
+    <p class="contactSubline">// Let's build something great together</p>
+
+    <div class="contactGrid">
+
+      <!-- FORM (LEFT) -->
+      <div class="contactFormWrap">
+        <form class="contactForm" id="contactForm">
+          <div class="formRow">
+            <div class="formGroup">
+              <label for="contactName">NAME</label>
+              <input type="text" id="contactName" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="formGroup">
+              <label for="contactEmail">EMAIL</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required />
             </div>
           </div>
+          <div class="formGroup">
+            <label for="contactSubject">SUBJECT</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="formGroup">
+            <label for="contactMessage">MESSAGE</label>
+            <textarea id="contactMessage" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btnSend" id="btnSend">
+            <span id="btnLabel">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+          </button>
+          <p class="formStatus" id="formStatus"></p>
+        </form>
+      </div>
+
+      <!-- INFO (RIGHT) -->
+      <div class="contactInfo">
+        <div class="contactInfoBlock">
+          <p class="contactInfoLabel">LOCATION</p>
+          <p class="contactInfoValue"><i class="fa-solid fa-location-dot"></i> Pretoria, South Africa</p>
+        </div>
+        <div class="contactInfoBlock">
+          <p class="contactInfoLabel">EMAIL</p>
+          <a class="contactInfoValue contactInfoLink" href="mailto:theartjooste0@gmail.com">
+            <i class="fa-solid fa-envelope"></i> theartjooste0@gmail.com
+          </a>
+        </div>
+        <div class="contactInfoBlock">
+          <p class="contactInfoLabel">STATUS</p>
+
+          <!-- STATUS BUBBLE: GREEN -->
+          <span class="statusBubble green">
+            <span class="dot"></span>
+            <p>Open to opportunities</p>
+          </span>
+
+        </div>
+        <div class="contactDivider"></div>
+        <p class="contactInfoLabel" style="margin-bottom: 0.75rem;">SOCIALS</p>
+        <div class="contactSocials">
+          <a href="https://github.com/ZAmystic" target="_blank" rel="noopener noreferrer" class="contactSocialLink">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/theart-g-jooste-45a45935b/" target="_blank" rel="noopener noreferrer" class="contactSocialLink">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://www.instagram.com/xxtheartjoostexx/" target="_blank" rel="noopener noreferrer" class="contactSocialLink">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61587229942232" target="_blank" rel="noopener noreferrer" class="contactSocialLink">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+        </div>
+        <div class="contactDivider"></div>
+        <div class="contactTerminal">
+          <p class="tComment"># response time</p>
+          <p class="tNormal"><span class="tPink">await</span> theart.reply(<span class="tPink">"your message"</span>)</p>
+          <p class="tComment"># → within 24 hours</p>
         </div>
       </div>
     </div>
@@ -169,36 +285,56 @@
 
   <!-- ========== FOOTER ========== -->
   <footer>
-    <h1>theart_PORTFOLIO.END()</h1>
-    <div class="footerLine">
-      <p><span class="footer-text">&copy; 2024 Theart Jooste.</span> All rights reserved.</p>
-      <div class="socialLinks">
+    <div class="footerInner">
+      <div class="footerGrid">
 
-        <!-- ========== GITHUB ========== -->
-        <a href="https://github.com/ZAmystic" target="_blank" rel="noopener noreferrer">
-          <span class="social-icon"><i class="fab fa-github"></i></span> GitHub
-        </a>
+        <!-- BRAND -->
+        <div class="footerBrand">
+          <h2 class="footerLogo">theart<span class="accent">_</span>dev</h2>
+          <p class="footerTagline">// Full-Stack Developer & ML Enthusiast<br>building from Pretoria, South Africa.</p>
 
-        <!-- ========== LINKEDIN ========== -->
-        <a href="https://www.linkedin.com/in/theart-g-jooste-45a45935b/" target="_blank" rel="noopener noreferrer">
-          <span class="social-icon"><i class="fab fa-linkedin"></i></span> LinkedIn
-        </a>
+        </div>
 
-        <!-- ========== INSTAGRAM ========== -->
-        <a href="https://www.instagram.com/xxtheartjoostexx/" target="_blank" rel="noopener noreferrer">
-          <span class="social-icon"><i class="fab fa-instagram"></i></span> Instagram
-        </a>
+        <!-- NAV -->
+        <div class="footerCol">
+          <p class="footerColLabel">NAVIGATION</p>
+          <ul class="footerLinks">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About</a></li>
+            <li><a href="#languages"><i class="fa-solid fa-angle-right"></i> Tools</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
 
-        <!-- ========== FACEBOOK ========== -->
-        <a href="https://www.facebook.com/profile.php?id=61587229942232" target="_blank" rel="noopener noreferrer">
-          <span class="social-icon"><i class="fab fa-facebook"></i></span> Facebook
-        </a>
+        <!-- CONNECT -->
+        <div class="footerCol">
+          <p class="footerColLabel">CONNECT</p>
+          <ul class="footerLinks">
+            <li><a href="https://github.com/ZAmystic" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/theart-g-jooste-45a45935b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/xxtheartjoostexx/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61587229942232" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
 
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="footerBottom">
+        <p class="footerCopy">
+          <span class="tPink">theart_PORTFOLIO</span>.END() &mdash; &copy; <span id="footerYear"></span> Theart Jooste. All rights reserved.
+        </p>
+        <p class="footerBuilt">Built with <span class="accent">HTML</span>, <span class="accent">CSS</span> & <span class="accent">JS</span></p>
       </div>
     </div>
   </footer>
 
+  <script>
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
   <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

@@ -1,101 +1,214 @@
-:root{
-  --header-text-color: #FBABFF;
-  --h1-text-color: #ACEDFF;
-  --text-color: #E9DDFF;
-  --metrics-text-color: #dddddd;
+/* ========== ABOUT SECTION ========== */
 
-   --line-color: #fbabff3f;
-
-   --primary-box-color: #101011;
-
-  /* Background Colours */
-  --primary-bg-color: #131314;
-  --grid-bg-color: #22242462;
+#about {
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .aboutHeader {
-  color: var(--header-text-color);
-  margin-left: 60px;
-  margin-bottom: 18px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #FBABFF;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
 }
 
-.aboutgrid {
+/* ===== GRID ===== */
+
+.aboutGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: start;
 }
 
-.aboutContentLeft {
-  padding: 20px;
+/* ===== LEFT ===== */
+
+.aboutTitle {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #f0f0f0;
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.02em;
 }
 
-.aboutContentLeft h1 {
-  color: var(--h1-text-color);
-  font-size: clamp(21px, 4vw, 34px);
-  line-height: 1.2;
-  margin-bottom: 10px;
+.aboutLead {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.8;
+  margin: 0 0 1.1rem;
 }
 
-.aboutContentLeft p {
-  color: var(--text-color);
-  font-size: clamp(14px, 1.5vw, 18px);
-  line-height: 1.6;
+.aboutBody {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.8;
+  margin: 0 0 2rem;
 }
 
-.aboutContentRight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* ===== TAGS ===== */
+
+.aboutTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.aboutContentRight h2 {
-    color: var(--h1-text-color);
-    font-size: clamp(16px, 3vw, 28px);  
+.aboutTag {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #aaa;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  padding: 0.4rem 0.85rem;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: border-color 0.2s, color 0.2s;
 }
 
-.seperatorLine{
-    border-top: 1px solid var(--line-color);
-    margin: 10px 0;
+.aboutTag i {
+  color: #FBABFF;
+  font-size: 0.7rem;
 }
 
-.ContentRightBox {
-  background-color: var(--primary-box-color);
-  border: 1px solid var(--line-color);
-  padding: 20px;
-  border-radius: 8px;
-  padding: 30px 40px;
-  width: 60%;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.aboutTag:hover {
+  border-color: #FBABFF;
+  color: #f0f0f0;
 }
 
-.ContentRightBox:hover{
-   box-shadow: 0 0 20px var(--line-color);
-   border: 1px solid var(--header-text-color);
+/* ===== METRICS CARD ===== */
+
+.metricsCard {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
 }
 
-.aboutContentRight p {
-    color: var(--header-text-color);
-    font-size: clamp(11px, 1.5vw, 15px);
-    line-height: 2;
-    margin-bottom: 8px;
+.metricsCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FBABFF, transparent);
 }
 
-.metricLabel{
-    color: var(--metrics-text-color);
-    font-weight: 100;
+/* ===== CARD HEADER ===== */
+
+.metricsCardHeader {
+  padding: 1.4rem 1.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #1a1a1a;
 }
 
-.metricValue{
-    float: right;
+.metricsLabel {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #FBABFF;
+  white-space: nowrap;
 }
 
-/* Responsive stacking */
-@media (max-width: 768px) {
-  .aboutgrid {
+.metricsHeaderLine {
+  flex: 1;
+  height: 1px;
+  background: #1e1e1e;
+}
+
+/* ===== METRICS LIST ===== */
+
+.metricsList {
+  padding: 0.5rem 0;
+}
+
+.metricRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+}
+
+.metricKey {
+  font-size: 0.83rem;
+  color: #666;
+}
+
+.metricVal {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FBABFF;
+  line-height: 1;
+}
+
+.metricUnit {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.08em;
+  margin-left: 2px;
+}
+
+.metricValMono {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.metricDivider {
+  height: 1px;
+  background: #141414;
+  margin: 0 1.5rem;
+}
+
+/* ===== CARD FOOTER ===== */
+
+.metricsCardFooter {
+  padding: 1rem 1.5rem 1.25rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .aboutGrid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .aboutRight {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  #about {
+    padding: 3.5rem 1rem;
+  }
+
+  .aboutTitle {
+    font-size: 1.7rem;
+  }
+
+  .metricRow {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .metricVal {
+    font-size: 1.1rem;
   }
 }

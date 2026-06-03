@@ -29,3 +29,50 @@ body {
     linear-gradient(90deg, var(--grid-bg-color) 1px, transparent 1px);
   background-size: 50px 50px;
 }
+
+/* ========== STATUS BUBBLES ========== */
+
+.statusBubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.statusBubble .dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.statusBubble .dot::before,
+.statusBubble .dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.statusBubble .dot::before {
+  background: var(--dot-color);
+}
+
+.statusBubble .dot::after {
+  background: var(--dot-color);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%   { opacity: 1;   transform: scale(1); }
+  50%  { opacity: 0.2; transform: scale(1); }
+  100% { opacity: 1;   transform: scale(1); }
+}
+
+/* ===== COLOUR VARIANTS ===== */
+
+.statusBubble.pink  { --dot-color: #FBABFF; color: #FBABFF; }
+.statusBubble.green { --dot-color: #00ff88; color: #00ff88; }
