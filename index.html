@@ -91,7 +91,7 @@
 
 <!-- ========== ABOUT ========== -->
 <section id="about">
-  <p class="aboutHeader">ABOUT THEART // 00</p>
+  <p class="aboutHeader">ABOUT THEART // 01</p>
 
   <div class="aboutGrid">
 
@@ -115,7 +115,6 @@
 
       <div class="aboutTags">
         <span class="aboutTag"><i class="fa-solid fa-code"></i> Full-Stack Dev</span>
-        <span class="aboutTag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
         <span class="aboutTag"><i class="fa-solid fa-shield-halved"></i> Clean Code</span>
         <span class="aboutTag"><i class="fa-solid fa-location-dot"></i> Pretoria, SA</span>
       </div>
@@ -196,6 +195,36 @@
   </section>
 
   <br>
+
+  <!-- ========== PROJECTS ========== -->
+<section id="projects">
+ 
+  <p class="sectionLabel">PROJECTS // 02</p>
+ 
+  <div class="projHeader">
+    <h2>My <span class="accent">Projects</span></h2>
+    <span class="projRepoCount" id="projCount">—</span>
+    <span class="projRepoCount" style="opacity:0.6;">repos</span>
+  </div>
+ 
+  <p class="projSubline">// Pulled live from GitHub &mdash; sorted by stars &amp; activity</p>
+ 
+  <!-- Error banner (hidden by default) -->
+  <div class="projError" id="projError"></div>
+ 
+  <!-- Card grid — populated by projects.js -->
+  <div class="projGrid" id="projGrid"></div>
+ 
+  <!-- Show more / show less toggle -->
+  <div class="projToggleWrap">
+    <button id="projToggleBtn">
+      Show More <i class="fa-solid fa-angle-down"></i>
+    </button>
+  </div>
+ 
+</section>
+
+<br>
 
   <!-- ========== CONTACT ========== -->
   <section id="contact">
@@ -291,7 +320,7 @@
         <!-- BRAND -->
         <div class="footerBrand">
           <h2 class="footerLogo">theart<span class="accent">_</span>dev</h2>
-          <p class="footerTagline">// Full-Stack Developer & ML Enthusiast<br>building from Pretoria, South Africa.</p>
+          <p class="footerTagline">// Full-Stack Developer<br>// Building from Pretoria, South Africa.</p>
 
         </div>
 
@@ -329,12 +358,8 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('footerYear').textContent = new Date().getFullYear();
-  </script>
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
+  <script src="js/project.js"></script>
 </body>
-
 </html>

@@ -47,7 +47,7 @@
 /* ========== FORM ========== */
 
 .contactFormWrap {
-  background: #0d0d0d;
+  background: #101011;
   border: 1px solid #222;
   border-radius: 4px;
   padding: 2rem;
@@ -92,7 +92,7 @@
 
 .formGroup input,
 .formGroup textarea {
-  background: #111;
+  background: #161616;
   border: 1px solid #2a2a2a;
   border-radius: 2px;
   color: #f0f0f0;
@@ -124,7 +124,7 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(251, 171, 255, 0.08);
+  background: rgba(122, 13, 128, 0.08);
   border: 1px solid rgba(251, 171, 255, 0.4);
   color: #FBABFF;
   padding: 0.75rem 1.5rem;
@@ -251,7 +251,7 @@
 /* ========== INLINE TERMINAL SNIPPET ========== */
 
 .contactTerminal {
-  background: #0a0a0a;
+  background: #101011;
   border: 1px solid #1e1e1e;
   border-radius: 2px;
   padding: 0rem 1.25rem 1rem 1.25rem;

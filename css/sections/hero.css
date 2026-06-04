@@ -37,7 +37,10 @@
 
 .heroContentLeft h1 {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--color-text-main);
+  font-size: clamp(40px, 5vw, 70px); 
+  line-height: 1.1;
 }
 
 .heroContentLeft {
@@ -47,12 +50,6 @@
   justify-content: center;
   padding: 8%;
   gap: 16px;
-}
-
-.heroContentLeft h1 {
-  color: var(--color-text-main);
-  font-size: clamp(40px, 5vw, 80px); /* scales with screen */
-  line-height: 1.1;
 }
 
 .heroContentLeft p {
